@@ -16,6 +16,7 @@
 <p><a href='add'>신규 회원</a></p>
 
 <%
+@SuppressWarnings("unchecked")
 ArrayList<Member> members = (ArrayList<Member>)request.getAttribute(
 								"members");
 for(Member member : members) {
@@ -23,10 +24,9 @@ for(Member member : members) {
 <%=member.getNo()%>,
 <a href='update?no=<%=member.getNo()%>'><%=member.getName()%></a>,
 <%=member.getEmail()%>,
-<%=member.getCreatedDate()%>
+<%=member.getCreateDate()%>
 <a href='delete?no=<%=member.getNo()%>'>[삭제]</a><br>
 <%} %>
 
-<p>테스트</p>
 </body>
 </html>
