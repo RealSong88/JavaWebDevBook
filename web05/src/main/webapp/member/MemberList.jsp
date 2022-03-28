@@ -12,6 +12,7 @@
 <title>회원 목록</title>
 </head>
 <body>
+<jsp:include page="/Header.jsp"></jsp:include>
 <h1>회원목록</h1>
 <p><a href='add'>신규 회원</a></p>
 
@@ -29,4 +30,5 @@ for(Member member : members) {
 <%} %>
 
 </body>
+<jsp:include page="/Tail.jsp"></jsp:include>
 </html>
