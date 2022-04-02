@@ -32,16 +32,16 @@
 	</servlet>
 	
 	<!-- 필터 선언 -->
-	<!-- <filter>
+	<filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<filter-class>filters.CharacterEncodingFilter</filter-class>
-	</filter> -->
+	</filter>
 	
 	<!-- 필터 url 매핑 -->
-<!-- 	<filter-mapping>
+	<filter-mapping>
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
-	</filter-mapping> -->
+	</filter-mapping>
 	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

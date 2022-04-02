@@ -15,11 +15,13 @@
 <jsp:include page="/Header.jsp"></jsp:include>
 <h1>회원목록</h1>
 <p><a href='add'>신규 회원</a></p>
-
+<jsp:useBean id="members"
+			scope="request" 
+			class="java.util.ArrayList"
+			type="java.util.ArrayList<spms.vo.Member>"
+			/>
+			
 <%
-@SuppressWarnings("unchecked")
-ArrayList<Member> members = (ArrayList<Member>)request.getAttribute(
-								"members");
 for(Member member : members) {
 %>
 <%=member.getNo()%>,
@@ -29,6 +31,6 @@ for(Member member : members) {
 <a href='delete?no=<%=member.getNo()%>'>[삭제]</a><br>
 <%} %>
 
-</body>
 <jsp:include page="/Tail.jsp"></jsp:include>
+</body>
 </html>
