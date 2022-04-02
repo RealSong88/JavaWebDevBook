@@ -66,5 +66,6 @@ ${myRb.Test }
 <p>
 ${myRb.OK }
 </p>
+
 </body>
 </html>
